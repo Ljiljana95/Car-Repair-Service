@@ -1,0 +1,1776 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* Global styles */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-size: 62.5%;
+    font-weight: 400;   
+    color: #555; 
+    font-family: 'Heebo', sans-serif;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1 {
+    font-weight: 700;
+    font-size: 3.8em;
+    color: #fff;
+}
+h1 strong {
+    color: #c22222;
+}
+h2 {
+    font-weight: 500;
+    font-size: 3em;
+    color: #3b3333;
+}
+h3 {
+    font-weight: 900;
+    font-size: 3em;
+    color: #fff;
+}
+h4 {
+    font-weight: 700;
+    font-size: 2.4em;
+    color: #3b3333;
+}
+p {
+    font-size: 1.3em;
+    font-weight: 300;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 1366px;
+    padding-left: 135px;
+    padding-right: 135px;
+    margin: 0 auto;
+}
+.container2 {
+    max-width: 1366px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+.color-overlay{
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: .75;
+    position: absolute;
+}
+.btn {
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #fff;
+    background: #c22222;
+    padding: 10px 31px;
+    outline: none;
+}
+.btn:hover{
+    cursor: pointer;
+    background: #dd3030;
+}
+.fas fa-chevron-right{
+	color: white;
+}
+.hero .fas{
+    padding-left: 0px;
+}
+.rounded{
+    border-radius: 6px;
+}
+nav a strong {
+    font-weight: 500;
+}
+#two-line div{
+    width: 162px;
+    height: 10px;
+    background-color: white;
+}
+#two-line span:nth-child(1){
+    width: 58px;
+    height: 1px;
+    display: block;
+    background-color: #c22222;
+    margin: auto;
+    margin-bottom: 10px;
+}
+#two-line span:nth-child(2){
+    width: 162px;
+    height: 2px;
+    display: block;
+    background-color: #c22222;
+    margin-top: 7px;
+    opacity: 0.5;
+    margin: auto;
+}
+ul {
+    list-style: none;
+} 
+blockquote {
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 2em;
+    color: #3b3333;
+    position: relative;
+    margin: 0;
+    padding: 30px 20px;
+}
+blockquote::after,
+blockquote::before {
+    content: '“';
+    position: absolute;
+    font-size: 80px;
+    font-family: 'Cookie', cursive;
+    color: #3b3333;
+    line-height: 40px;
+    text-transform: none;
+    font-style: normal;
+}
+blockquote::after {
+    content: '”';
+    bottom: -27px;
+    right: 0;
+}
+blockquote::before {
+    top: 27px;
+    left: 0;
+}   
+/* ======== HEADER ========== */
+header {
+    padding: 15px 0 10px;
+}
+nav {
+    display: table;
+    max-width: 70%;
+    visibility: hidden;
+    position: absolute;
+    float: right;
+    top: 65px;
+    right: 0px;
+    width: 40%;
+    height: 80%;
+    background-color: #fff;
+    text-align: left;
+    color: #fff;
+}
+nav ul {
+    display: table-cell;
+    vertical-align: middle;
+}
+nav a {
+    color: #3b3333;
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 70px;
+    padding: 5px 10px;
+}
+nav .btn {
+    background: #fff;
+}
+#logo {
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    z-index: 1;
+    width: 65px;
+    margin-top: 5px;
+ }
+.burger {
+    width: 40px;
+    height: 30px;
+    padding: 2px 0;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+.burger span {
+    width: 100%;
+    height: 2px;
+    background-color: #3b3333;
+    display: block;
+    margin-top: 7px;
+}
+.burger span:nth-child(1) {
+    margin-top: 0;
+}
+.burger span:hover {
+    cursor: pointer;
+}
+/* ======== HEADER END ========== */
+
+/* ========== HERO SECTION ======== */
+.hero {
+    background-image:url('../img/car-repair-photo.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    position: relative;
+    background-position: 60%;
+}
+.hero div {
+    padding: 90px 70px 60px 15px;
+}
+.hero .btn {
+    padding: 15px 44px;
+    font-size: 1.8em;
+    position: relative;
+    left: 50%;
+    margin-left: -80px;
+}
+#overlay-div{
+    position: relative;
+}
+.hero p{
+    color: white;
+    font-weight: 300;
+}
+span strong{
+    color: white;
+}
+h1{
+    font-size: 3.8em;
+}
+/* ========== HERO SECTION END======== */
+
+/* ========== SECTION SERVICES ======== */
+.services h2 {
+	text-align: center;
+	padding-top: 50px; 
+    margin-bottom: 10px; 
+}
+.services p {
+    font-size: 2em;
+    font-weight: 400;  
+    margin: 60px 0 30px; 
+    margin-left: 3%;
+    color: #3b3333;
+}
+.services ul {
+    text-align: left;
+    display: block;
+}
+.services li {
+    position: relative;
+    /*font-size: 1em;*/
+    margin-bottom: 10px;
+    padding: 10px 10px 10px 10px;
+    max-height: 60px; 
+}
+.offer-list li::after {
+    content: "";
+    width: 100%;
+    height: 0px;
+    background-color: transparent;
+    bottom: 15px;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
+.offer-list li {
+    border: 1px solid ;
+    border-color:rgba(194,34,34, 0.4);
+    font-size: 1em;
+}
+.services .offer-list p {
+    color: #3b3333;
+    font-size: 1.4em;
+    font-weight: 400;
+    margin: 0;
+    display: inline;
+    margin-left: 15px;
+    vertical-align: middle;
+}
+.offer-list span {
+    position: relative;
+    margin-top: 6px;
+    font-size: 1.4em;
+    font-weight: 500;
+    color: #c22222;
+    background: #fff;
+    float: right;
+}
+.offer-list img{
+    max-height: 30px;
+    max-height: 30px;
+    vertical-align: middle;
+}
+/* ========== SECTION SERVICES END ======== */
+
+/* ========== SECTION ABOUT US ======== */
+.about {
+    background-image:url('../img/about-us.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    position: relative;
+    background-position: 70%;
+}
+.about-rect {
+    max-width: 79%;
+    background-color: white;
+    opacity: .8;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 5px 10px 5px 10px;
+}
+.about h2 {
+    font-size: 2em;
+    margin-bottom: 5px;
+    max-width: 70%;
+}
+.about-rect h2 strong,
+#two-column strong {
+    color: #c22222;
+}
+#two-column {
+    column-count: 1;
+}
+.about-rect p:first-of-type {
+    font-size: 1.8em;
+    font-weight: 100;
+    margin-bottom: 7%;
+}
+/* ========== SECTION ABOUT US END ======== */
+
+/* ========== SECTION WHY  ======== */
+.why li {
+    height: 0;
+    padding-bottom: 69%; /* 9/16x100% for 16:9 image format*/
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 5px;
+}
+.why li img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%)
+}
+.why h2 {
+    padding: 30px 0 5px 0;
+    font-size: 2em;
+}
+.why h4 {
+    text-align: center;
+    font-size: 1.7em;
+}
+.why strong {
+    color: #c22222;
+}
+#why-choose #two-line span:nth-child(1),
+#why-choose #two-line span:nth-child(2) {
+    background-color: #c22222;
+}
+.why p {
+    position: absolute;
+    bottom: -17px;
+    left: 5%;
+    z-index: 2;
+    font-weight: 900;
+    font-size: 1.8em;
+    color: white;
+}
+#big-text {
+    color: #3b3333;
+}
+#small-text {
+    font-style: italic;
+    font-size: 0.7em;
+    bottom: -10px;
+    color: #3b3333;
+}
+/* ========== SECTION WHY END  ======== */
+
+/* ========== SECTION CARE TIPS ======== */
+.tips {
+    background-image:url('../img/care-tips.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    position: relative;
+    background-position: 50%;
+    padding-top: 3%;
+}
+.tips strong{
+    color: #c22222;
+    padding-right: 15px;
+    padding-bottom: 35px;
+}
+.tips h2 {
+    color: white;
+    text-align: center;
+}
+.tips-rect {
+    width: 100%;
+    display: inline-block;
+    background-color: white;
+    opacity: .8;
+    margin-left: 0px;
+    margin-bottom: 5%;
+    padding: 10px 20px;
+}
+.tips-rect2 {
+    width: 100%;
+    display: inline-block;
+    background-color: white;
+    opacity: .8;
+    margin-right: 0px;
+    padding: 10px 20px;
+}
+.tips .tips-rect p, .tips-rect2 p{
+    font-size: 1em;
+    font-weight: 700;
+    margin: 2px;
+}
+.tips h2 {
+    font-size: 2em;
+}
+.tips h4 {
+    font-size: 1.4em;
+    color: white;
+    text-align: center;
+}
+#two-line {
+    margin-bottom: 7%;
+}
+#care-tips #two-line span:nth-child(1),
+#care-tips #two-line span:nth-child(2) {
+    background-color: white;
+}
+/* ========== SECTION CARE TIPS END  ======== */
+
+/* ========== SECTION CONTACT  ======== */
+.contact li {
+    height: 0;
+    padding-bottom: 108%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 5px;
+    border: 0.5px solid #c22222;
+    border-color:rgba(194,34,34, 0.4);
+}
+.contact-us {
+    padding: 12% 10%;
+}
+.contact-us p{
+    margin: 0;
+    padding: 2px 0px;
+    font-weight: 300;
+    font-size: 1.4em;
+    text-align: center;
+}
+.contact-us p:nth-child(2),
+.contact-us p:nth-child(3) {
+    padding: 15px 0px;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+.contact-us strong {
+    color: #c22222;
+}
+.contact-icon {
+    padding-left: 39%;
+}
+.contact-icon2 {
+    padding-left: 36%;
+}
+.contact #two-line span:nth-child(2){
+    margin-bottom: 16%;
+}
+.contact .btn {
+    font-size: 1.7em;
+    padding: 4.5% 6%;
+    margin: 0;
+    margin-top: 5px;
+    float: right;
+    width: 100%;
+}
+.contact h2 {
+    font-size: 2em;
+    padding: 3% 0;
+}
+.back {
+    border: 1px solid ;
+    border-color: #c22222;
+    border-radius: 15%;
+    background-color: transparent;
+    padding: 10px 4px;
+    position: fixed;
+    right: 0px;
+    bottom: 17%;
+    opacity: .5;
+}
+.back:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.contact-us strong:hover {
+    color: #f34949;
+}
+.call:hover {
+    cursor: pointer;
+}
+/* ========== SECTION CONTACT END  ======== */
+
+/* ========== FOOTER  ======== */
+.footer-logo img{
+    max-width: 70px;
+    /*padding-bottom: 8px;*/
+}
+footer ul{
+    display: inline;
+    float: right;
+    position: initial;
+    width: auto;
+    height: auto;
+    max-width: 80%;
+}
+footer li {
+    float: left;
+    padding: 23% 0%
+}
+footer li a {
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #3b3333;
+    margin-left: 10px;
+    padding: 0px;
+}
+footer li a:hover {
+    color: #c22222;
+}
+footer p{
+    padding-bottom: 5px;
+    margin: 0;
+    display: block;
+    font-size: 0.9em;
+}
+footer span {
+    padding-left: -2px;
+}
+/* ========== FOOTER END  ======== */
+
+/* ======== Modal  ========== */
+.modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.6);
+}
+.modal.open {
+    display: block;
+}
+.modal-wrap {
+    max-width: 870px;
+    width: 90%;
+    padding: 20px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 90%;
+    overflow-y: auto;
+}
+.modal-wrap > * {
+    display: inline-block;
+}
+/*.modal-wrap .close span {
+    background-color: #d6d6d6;
+}*/
+.modal-wrap h3 {
+    color: #c22222;
+    font-weight: 500;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 3%;
+}
+.modal-inner {
+    max-width: 520px;
+    margin: 0 auto;
+}
+legend {
+    text-align: left;
+    font-size: 1.8em;
+    font-weight: 500;
+    padding-bottom: 30px;
+    padding: 23px 0px;
+    color: #3b3b3b;
+}
+input {
+    border: 1px solid #d6d6d6;
+    width: 100%;
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+input::placeholder {
+  color: #d6d6d6;
+  font-size: 14px;
+  font-style: italic;
+}
+input:focus {
+    outline: none;
+    border-color: #c22222;
+}
+input.btn {
+    font-size: 1.6em;
+    max-width: 248px;
+    margin: 0 auto;
+    display: block;
+    padding: 13px 15px;
+}
+ input[type="date"]:before,
+ input[type="time"]:before {
+    content: attr(placeholder) !important;
+    color: #d6d6d6;
+    font-style: italic;
+    margin-right: 0.5em;
+}
+.modal img:nth-child(1) {
+    position: absolute;
+    top: 4%;
+    left: 3%;
+}
+#close {
+    position: absolute;
+    top: 20px;
+    left: 91%;
+    right: 20px;
+    display: block;
+    margin: 0;
+    cursor: pointer;
+}
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 320px) { /*Visak ali kasno da brisem*/
+    .hero div { /*NE DODAJ OVDE!*/
+        padding: 50px 70px 40px 25px;
+    }
+    .services.container {
+        padding-right: 34px;
+        padding-left: 34px;
+    }
+    .services h2{
+        padding-top: 30px;
+        font-size: 2.5em;
+    }
+    .services li{
+        position: relative;
+    }
+    .services p{
+        margin-left: 0%;
+        margin: 40px 0 15px;
+    }
+    .services ul{
+        padding-bottom: 30px;
+    }
+    .container {
+        padding-right: 34px;
+        padding-left: 34px;
+    }
+}
+@media only screen and (min-width: 385px) {
+    .hero div {
+        padding: 80px 100px 40px 25px;
+    }
+    .hero .btn {
+        position: relative;
+        left: 50%;
+        margin-left: -65px;
+    }
+    .services h2{
+        padding-top: 30px;
+        font-size: 2.5em;
+    }
+    .services p{
+        font-size: 2.1em;
+        margin-left: 0%;
+    }
+    .services li{
+        position: relative;
+    }
+    .services.container {
+        padding-right: 41px;
+        padding-left: 41px;
+    }
+    .services ul{
+        padding-bottom: 30px;
+    }
+    .offer-list li {
+        border: 1px solid ;
+        border-color:rgba(194,34,34, 0.4);
+        font-size: 1em;
+    }
+    .about-rect {
+        padding: 20px 30px;
+    }
+    #care-tips {
+        padding-right: 14px;
+        padding-left: 14px;
+    }
+    #why-choose {
+        padding-right: 14px;
+        padding-left: 14px;
+    }
+    .contact-icon {
+        padding-left: 38%;
+    }
+    #contact {
+        padding-right: 14px;
+        padding-left: 14px;
+    }
+    .contact-us {
+        padding: 12% 17%;
+    }
+    .contact-us p {
+        padding: 4px 0px;
+    }
+    .contact-us p:nth-child(2),
+    .contact-us p:nth-child(3) {
+        padding: 18px 0px;
+    }
+    .contact li {
+        height: 0;
+        padding-bottom: 103%;
+    }
+    #two-line {
+        margin-bottom: 25%;
+    }
+    .back {
+        right: 7px;
+    }
+}
+@media only screen and (min-width: 475px) {
+    .hero div {
+        padding: 90px 220px 40px 25px;
+    }
+    .hero .btn {
+        position: relative;
+        left: 50%;
+        margin-left: -0px;
+    }
+    .services h2{
+        padding-top: 20px;
+        font-size: 2.8em;
+    }
+    .services p{
+        font-size: 2.2em;
+        margin-left: 0%;
+    }
+    .services.container {
+        padding-right: 75px;
+        padding-left: 75px;
+    }
+    .services ul{
+        padding-bottom: 30px;
+    }
+    .services li{
+        position: relative;
+    }
+    .about h2{
+        font-size: 2.5em;
+        max-width: 100%;
+    }
+    .about-rect p:first-of-type {
+        font-size: 2.5em;
+    }
+    p{
+        font-size: 2em;
+    }
+    blockquote{
+        font-size: 3em;
+    }
+    blockquote::after,
+    blockquote::before {
+        font-size: 110px;
+    }
+    #two-column {
+        column-count: 1;
+    }
+    .tips .tips-rect p, .tips-rect2 p{
+        font-size: 1.4em;
+        margin: 5px;
+    }
+    .tips h4 {
+     font-size: 1.9em;
+    }
+    .tips h2 {
+        font-size: 2.5em;
+    }
+    .tips-rect, .tips-rect2 {
+        padding: 10px 30px;
+    }
+    #care-tips {
+        padding-right: 36px;
+        padding-left: 36px;
+    }
+    #why-choose {
+        padding-right: 46px;
+        padding-left: 46px;
+    }
+    #contact {
+        padding-right: 36px;
+        padding-left: 36px;
+    }
+    .why h2 {
+        font-size: 2.5em;
+    }
+    .why h4 {
+        font-size: 1.8em;
+    }
+    .why p {
+        font-size: 3em;
+        bottom: -21px;
+    }
+    #small-text {
+        font-size: 1.5em;
+        bottom: -17px;
+    }
+    .contact-icon {
+        padding-left: 40%;
+    }
+    .back {
+        padding: 16px 12px;
+        right: 10px;
+    }
+    .contact li {
+        padding-bottom: 95%;
+    }
+    .contact-us p:nth-child(2),
+    .contact-us p:nth-child(3) {
+        padding: 18px 0px;
+        font-size: 2.2em;
+    }
+    .contact-us p {
+        font-size: 1.7em;
+    }
+    .contact .btn {
+        padding: 4.5% 6%;
+        font-size: 2em;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .contact li {
+        width: 49%;
+        margin: 1px 1px;
+        padding-bottom: 65%;
+        float: left;
+    }
+    .contact-us p:nth-child(2), 
+    .contact-us p:nth-child(3) {
+        padding: 15px 0px;
+        font-size: 2em;
+    }
+    .contact-icon {
+        padding-left: 35%;
+    }
+    .contact-icon2 {
+        padding-left: 28%;
+    }
+    .contact .btn {
+        float: left;
+        margin-top: 5px;
+        width: 49%;
+        padding: 3.5% 6%;
+    }
+    footer ul {
+        margin-right: 20px;
+    }
+    footer li {
+        padding: 16% 0%;
+    }
+    footer li a {
+        font-size: 1.5em;
+        margin-left: 20px;
+    }
+    footer p {
+        font-size: 1em;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #logo {
+        position: absolute;
+        left: 60px;
+        top: 0px;
+        z-index: 5;
+        width: 145px;
+    }
+    .hero div {
+        padding: 80px 280px 40px 60px;
+    }
+    .hero .btn {
+        position: relative;
+        left: 0%;
+        margin-left: 0px;
+    }
+    .services h2{
+        padding-top: 50px;
+    }
+    .services li {
+        position: relative;
+        float: left;
+        width: 46%;
+        margin-bottom: 15px;
+    }
+    .services li:nth-child(even) {
+        margin-left: 1%;
+    }
+    .services li:nth-child(odd) {
+         margin-right: 1%;
+         margin-left: 3%;
+    }
+    .services.container {
+        padding-right: 71px;
+        padding-left: 71px;
+    }
+    .services ul{
+        padding-bottom: 30px;
+    }
+    .services p{
+        margin-left: 3%;
+    }
+    #two-column {
+        column-count: 2;
+        column-gap: 40px;
+    }
+    .tips h2 {
+        font-size: 2.5em;
+        padding-bottom: 6%;
+    }
+    .tips-rect, .tips-rect2{
+        width: 45%;
+        margin-right: 0;
+        margin-left: 4%;
+        padding: 3% 3%;
+    }
+    .tips .tips-rect p,
+          .tips-rect2 p {
+        font-size: 1.2em;
+        margin: 0;
+    }
+    .tips h4 {
+        font-size: 1.8em;
+    }
+    #care-tips {
+        padding-right: 38px;
+        padding-left: 21px;
+    }
+    #why-choose {
+        padding-right: 51px;
+        padding-left: 55px;
+    }
+    #two-line {
+        margin-bottom: 3%;
+    }
+    .why li {
+        width: 49%;
+        margin-right: 1%;
+        margin-bottom: 1%;
+        padding-bottom: 34%; /* 9/16x49 because we have 2 columns*/
+        float: left;
+    }
+    .why p {
+        font-size: 2.2em;
+        bottom: -12px;
+    }
+    #small-text {
+        font-size: 1.1em;
+        bottom: -9px;
+    }
+    .contact li {
+        width: 30.9%;
+        margin: 0 1px;
+        padding-bottom: 41%;
+        float: left;
+    }
+    .contact li:nth-child(2) {
+        margin: 0 3.2%;
+    }
+    .contact #two-line span:nth-child(2) {
+        margin-bottom: 25%;
+    }
+    #contact {
+        padding-right: 51px;
+        padding-left: 55px;
+    }
+    .contact-us {
+        padding: 12% 8%
+    }
+    .contact-icon {
+        padding-left: 35%;
+    }
+    .contact-icon2 {
+        padding-left: 30%;
+        padding-top: 10px;
+    }
+    .contact-us p:nth-child(2), 
+    .contact-us p:nth-child(3) {
+        font-size: 1.6em;
+    }
+    .contact-us p {
+        font-size: 1.2em;
+        padding: 0px 0px;
+    }
+    .contact .btn {
+        margin: 3% 3px;
+        float: right;
+        width: 30.9%;
+        font-size: 1.5em;
+        padding: 2.5% 4%
+    }
+    .back {
+        right: 23px;
+    }
+    .contact h2 {
+        font-size: 2.5em;
+    }
+/* MODAL */
+      .modal-wrap {
+        padding: 70px;
+      }
+      form {
+        text-align: left;
+      }
+      /*.logo-copy-wrap {
+        float: left;
+        text-align: left;
+      }*/
+      input {
+        margin-right: 10px;
+        margin-left: 10px;
+        width: calc(50% - 22px);
+      }
+      input.btn {
+        margin-top: 40px;
+      }
+      input.width__2,
+      input.btn {
+        width: calc(100% - 22px);
+      }
+      fieldset {
+        margin-bottom: 0px;
+      }
+      fieldset:last-of-type {
+        margin-bottom: 0;
+      }
+      legend {
+        margin-left: 10px;
+        text-align: left;
+      }
+      #close {
+         left: 94%;
+     }
+/* MODAL END */
+
+}
+@media only screen and (min-width: 890px) {
+    .services.container {
+        padding-right: 74px;
+        padding-left: 76px;
+    }
+    h1{
+        font-size: 4em;
+        max-width: 80%;
+    }
+    .tips strong{
+        padding-right: 15px;
+        padding-bottom: 35px;
+    }
+    .tips-rect {
+        width: 46%;
+        margin-left: 0;
+        margin-right: 3.5%;
+        padding: 3% 4%;
+    }
+    .tips-rect2 {
+        width: 46%;
+        margin-right: 0;
+        margin-left: 4%;
+        padding: 3% 4%;
+    }
+    .tips .tips-rect p, .tips-rect2 p{
+        font-size: 1.4em;
+        margin: 2%;
+    }
+    #two-line {
+        margin-bottom: 3%;
+    }
+    #care-tips {
+        padding-right: 57px;
+        padding-left: 57px;
+    }
+    #why-choose {
+        padding-right: 57px;
+        padding-left: 57px;
+    }
+    #contact {
+        padding-right: 57px;
+        padding-left: 57px;
+    }
+    .contact-icon {
+        padding-left: 39%;
+    }
+    .contact .btn {
+        font-size: 1.6em;   
+    }
+    .contact li {
+        padding-bottom: 40%;
+    }
+}
+@media only screen and (min-width: 945px) {
+    #logo {
+      position: absolute;
+      left: 60px;
+      top: 0px;
+      z-index: 5;
+      width: 145px;
+    }
+    .hero div {
+        padding: 100px 390px 45px 60px;
+    }
+    h1{
+        font-size: 5em;
+        max-width: 90%;
+    }
+    .hero .btn {
+        position: relative;
+        left: 0%;
+        margin-left: 0px;
+    }
+    .services.container {
+        padding-right: 75px;
+        padding-left: 77px;
+    }
+    .services ul{
+        padding-bottom: 50px;
+    }
+    .services p{
+        margin-left: 3%;
+    }
+    #care-tips {
+        padding-right: 65px;
+        padding-left: 65px;
+    }
+    #why-choose {
+        padding-right: 65px;
+        padding-left: 65px;
+    }
+    #contact {
+        padding-right: 65px;
+        padding-left: 65px; 
+    }
+    .contact-us {
+        padding: 15% 15%;
+    }
+    .contact-us p{
+        margin: 0;
+        padding: 5px 0px;
+        font-weight: 300;
+        font-size: 1.6em;
+        text-align: center;
+    }
+    .contact-us p:nth-child(2),
+    .contact-us p:nth-child(3) {
+        padding: 20px 0px;
+        font-size: 2em;
+        font-weight: 500;
+    }
+    .contact-icon {
+        padding-left: 37%;
+    }
+    .contact-icon2 {
+        padding-left: 30%;
+    }
+    .contact #two-line span:nth-child(2){
+        margin-bottom: 25%;
+    }
+    .contact .btn {
+        font-size: 1.7em;
+        padding: 2.3% 5%;
+        margin: 3% 3px;
+        float: right;
+        width: 31%;
+    }
+    .contact h2 {
+        padding: 3% 0;
+    }
+    .contact li {
+        padding-bottom: 43%;
+    }
+    .back {
+        right: 27px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    blockquote {
+        display: inline-block;
+        width: calc(50% - 32px);
+        vertical-align: top;
+        margin-top: -10px;
+        margin-left: 53%;
+    }
+    #care-tips {
+        padding-right: 70px;
+        padding-left: 70px;
+    }
+    #why-choose {
+        padding-right: 70px;
+        padding-left: 70px;
+    }
+    #contact {
+        padding-right: 70px;
+        padding-left: 70px;
+    }
+    .modal-wrap {
+        padding: 50px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    /* ======== HEADER ========== */
+    header {
+        padding: 2px 0 2px;
+    }
+    #logo {
+      position: absolute;
+      left: 60px;
+      top: 0px;
+      z-index: 5;
+      width: 145px;
+    }
+    nav {
+        display: block;
+        position: initial;
+        width: auto;
+        height: auto;
+        background: inherit;
+        float: right;
+        visibility: visible;
+        max-width: 80%;
+        margin-right: 10px;
+    }
+    nav li {
+        float: left;
+    }
+    nav a {
+        color: #3b3333;
+        margin-left: 20px;
+        font-size: 1.2em;
+        padding: 2px;
+    }
+    nav a:not(.btn).active,
+    nav a:not(.btn):hover {
+        color: #c22222;
+        font-weight: 500;
+        font-size: 1.5em;
+        transition: 20ms;
+        transition-duration: 0.3s;
+        /*border-top: 1px solid #c22222;
+        border-bottom: 1px solid #c22222;*/
+    }
+    nav a,
+    nav a.btn {
+        font-size: 1.2em;
+    }
+    nav a.btn {
+        color: #fff;
+        font-size: 1.4em;
+        background: #c22222;
+    }
+    .burger,
+    nav .close {
+        display: none;
+    }
+    /* ======== HEADER END ========== */
+
+    /* ========== HERO SECTION ======== */
+    .hero {
+        background-image:url('../img/car-repair-photo.png');
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
+    .hero div {
+        padding: 60px 90px 20px 130px;
+    }
+    h1{
+        font-size: 5.5em;
+        margin-bottom: 120px;
+        max-width: 70%;
+    }
+    .hero p{
+        color: white;
+        font-size: 2em;
+    }
+    .hero .btn{
+        font-size: 2em;  
+        position: none !important;
+        left: 0% !important;
+        margin-left: 0px; 
+    }
+/* ========== HERO SECTION END======== */
+
+/* ========== SECTION SERVICES ======== */
+.services.container{
+    padding-right: 108px;
+    padding-left: 108px; 
+}
+.services li {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 10px 25px 10px 25px;
+    max-height: 60px; 
+}
+.services ul{
+    padding-bottom: 80px; 
+}
+.services h2{
+    padding-top: 36px;
+}
+.offer-list span{
+    font-size: 1.5em;
+    margin-top: 5px;
+}
+.services .offer-list p {
+    font-size: 1.4em;
+}
+/* ========== SECTION SERVICES END ======== */
+
+/* ========== SECTION WHY  ======== */
+#why-choose {
+    padding-right: 72px;
+    padding-left: 72px;
+}
+.why p {
+    font-size: 2.8em;
+    bottom: -20px;
+}
+#small-text {
+    font-size: 1.1em;
+    bottom: -9px;
+}
+/* ========== SECTION WHY END  ======== */
+
+/* ========== SECTION CARE TIPS ======== */
+.tips strong{
+    padding-right: 15px;
+    padding-bottom: 35px;
+}
+.tips-rect {
+    width: 46%;
+    margin-left: 0;
+    margin-right: 3.5%;
+    padding: 3% 4%;
+}
+.tips-rect2 {
+    width: 46%;
+    margin-right: 0;
+    margin-left: 4%;
+    padding: 3% 4%;
+}
+.tips .tips-rect p, .tips-rect2 p{
+    font-size: 1.6em;
+}
+#two-line {
+    margin-bottom: 3%;
+}
+#care-tips {
+    padding-right: 72px;
+    padding-left: 72px;
+}
+/* ========== SECTION CARE TIPS END  ======== */
+
+/* ========== SECTION CONTACT  ======== */
+#contact {
+    padding-right: 72px;
+    padding-left: 72px;  
+}
+.back {
+    right: 27px;
+}
+.contact li {
+    padding-bottom: 38%;
+}
+/* ========== SECTION CONTACT END  ======== */
+
+/* ========== FOOTER  ======== */
+footer-logo img{
+    max-width: 100px;
+}
+footer ul {
+    margin-right: 24px;
+}
+footer li {
+    padding: 11% 0%;
+}
+footer li a {
+    font-size: 1.5em;
+    margin-left: 38px;
+}
+footer p{
+    font-size: 1.2em;
+}
+.footer-logo img{
+    margin-left: 8px;
+}
+footer span {
+    padding-left: 8px;
+}
+/* ========== FOOTER END  ======== */
+
+}
+@media only screen and (min-width: 1150px) {
+    .hero div {
+        padding: 60px 400px 60px 135.3px;
+    }
+    h1 {
+        max-width: 80%;
+    } 
+    blockquote {
+        font-size: 3.2em;
+    }
+    .tips .tips-rect p, .tips-rect2 p{
+        font-size: 1.8em;
+        font-weight: 700;
+    }
+    #care-tips {
+        padding-right: 88px;
+        padding-left: 88px;
+    }
+    #why-choose {
+        padding-right: 88px;
+        padding-left: 88px;
+    }
+    .contact-icon {
+        padding-left: 39%;
+    }
+    #contact {
+        padding-right: 88px;
+        padding-left: 88px;
+    }
+    .back {
+        right: 44px;
+    }
+    .contact li {
+        padding-bottom: 38%;
+    }
+    .contact .btn {
+        font-size: 2.3em;
+        padding: 1.5% 4%;
+    }
+    .contact-us p:nth-child(2), 
+    .contact-us p:nth-child(3) {
+        font-size: 2.4em;
+    }
+    .contact-us p {
+        font-size: 1.8em;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .hero div {
+        padding: 70px 85px 85px 143px;
+    }
+    h1{
+        font-size: 6.5em;
+        max-width: 65%;
+    }
+    blockquote {
+        margin-top: 0px;
+    }  
+    .about-rect {
+        margin-left: ;
+        margin-right: ;
+    } 
+    #care-tips {
+        padding-right: 105px;
+        padding-left: 110px;
+    }
+    #why-choose {
+        padding-right: 96px;
+        padding-left: 110px;
+    }
+    #contact {
+        padding-right: 105px;
+        padding-left: 110px;
+    }
+    .contact li {
+        padding-bottom: 38%;
+    }
+    .contact-icon2 {
+        padding-left: 36%;
+    }
+    .modal-wrap {
+        padding: 70px;
+    }
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.unstyle-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.text-center {
+    text-align: center;
+}
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+button {
+    background: transparent;
+    border: none;
+}
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
