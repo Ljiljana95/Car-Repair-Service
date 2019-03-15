@@ -246,13 +246,14 @@ nav {
     visibility: hidden;
     position: absolute;
     float: right;
-    top: 65px;
+    top: 70px;
     right: 0px;
     width: 40%;
-    height: 80%;
+    height: 30%;
     background-color: #fff;
     text-align: left;
     color: #fff;
+    z-index: 5;
 }
 nav ul {
     display: table-cell;
