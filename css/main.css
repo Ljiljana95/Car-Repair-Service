@@ -170,7 +170,7 @@ a {
     background: #dd3030;
 }
 .fas fa-chevron-right{
-	color: white;
+    color: white;
 }
 .hero .fas{
     padding-left: 0px;
@@ -336,8 +336,8 @@ h1{
 
 /* ========== SECTION SERVICES ======== */
 .services h2 {
-	text-align: center;
-	padding-top: 50px; 
+    text-align: center;
+    padding-top: 50px; 
     margin-bottom: 10px; 
 }
 .services p {
@@ -688,6 +688,7 @@ footer span {
     width: 100%;
     margin: 0;
     padding-bottom: 3%;
+    padding-top: 57px;
 }
 .modal-inner {
     max-width: 520px;
@@ -735,6 +736,7 @@ input.btn {
     position: absolute;
     top: 4%;
     left: 3%;
+    width: 63px;
 }
 #close {
     position: absolute;
@@ -744,6 +746,7 @@ input.btn {
     display: block;
     margin: 0;
     cursor: pointer;
+    width: 10px;
 }
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -842,11 +845,14 @@ input.btn {
         padding-bottom: 103%;
     }
     #two-line {
-        margin-bottom: 25%;
+        margin-bottom: 7%;
     }
     .back {
         right: 7px;
     }
+    .modal #two-line {
+        margin-bottom: 3%;
+    } 
 }
 @media only screen and (min-width: 475px) {
     .hero div {
@@ -1133,8 +1139,14 @@ input.btn {
         font-size: 2.5em;
     }
 /* MODAL */
+      .modal img:nth-child(1) {
+        width: 133px;
+      }
       .modal-wrap {
         padding: 70px;
+      }
+      .modal-wrap h3 {
+        padding-top: 0;
       }
       form {
         text-align: left;
@@ -1167,6 +1179,7 @@ input.btn {
       }
       #close {
          left: 94%;
+         width: 22px;
      }
 /* MODAL END */
 
