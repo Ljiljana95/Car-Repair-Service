@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 $('[data-trigger="dropdown"]').on('mouseenter', function(){
   var submenu = $(this).parent().find('.nav');
-  submenu.fadeIn(500);
+  submenu.fadeIn(300);
 
   $(this).on('mouseleave', function(){
 
@@ -11,6 +11,21 @@ $('[data-trigger="dropdown"]').on('mouseenter', function(){
       submenu.fadeOut(300);
     });
   });
+});
+
+var btn = $('.back');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
 });
 
 $('.btn').on('click', function(event) {

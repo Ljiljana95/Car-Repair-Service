@@ -165,6 +165,7 @@ a {
     padding: 10px 31px;
     outline: none;
     margin-left: 21px;
+    box-shadow: 3px 3px 1px 0px #624848;
 }
 .btn:hover{
     cursor: pointer;
@@ -326,6 +327,7 @@ nav .btn {
     position: relative;
     left: 50%;
     margin-left: -80px;
+    box-shadow: 2px 2px 0px 0px #fff;
 }
 #overlay-div{
     position: relative;
@@ -607,7 +609,16 @@ h1{
     position: fixed;
     right: 0px;
     bottom: 17%;
-    opacity: .5;
+    transition: border-color .3s, opacity .3s, visibility .3s;
+    visibility: hidden;
+    opacity: 0;
+}
+.back:active {
+  border-color: #c22222;
+}
+.back.show {
+  opacity: .5;
+  visibility: visible;
 }
 .back:hover {
     opacity: 1;
@@ -669,7 +680,6 @@ footer span {
     left: 0;
     background-color: rgba(0,0,0,.6);
     z-index: 2;
-
 }
 .modal.open {
     display: block;
@@ -731,6 +741,7 @@ input:focus {
     opacity: 0.6;
 }
 input.btn {
+    border: 1px #d6d6d6;
     font-size: 1.6em;
     max-width: 248px;
     margin: 0 auto;
