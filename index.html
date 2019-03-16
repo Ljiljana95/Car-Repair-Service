@@ -252,14 +252,17 @@
         <form>
           <fieldset>
             <legend>Contact person</legend>
-            <input type="text" name="firstname-surname" placeholder="Enter name" class="width__2 rounded">
+            <input type="text" name="firstname-surname" placeholder="Enter name" class="width__2 rounded error">
+            <div class="error-message">Name is a required field.</div>
             <input type="number" name="phone-num" placeholder="Enter phone number" class="rounded">
-            <input type="email" name="email" placeholder="Enter email address" class="rounded">           
+            <input type="email" name="email" placeholder="Enter email address" class="rounded">       
           </fieldset>
           <fieldset>
             <legend>Make your appointment</legend>
-            <input type="date" name="res-date" placeholder="Select date:" class="width__2 rounded">
-            <input type="time" name="res-time" placeholder="Select time:" class="width__2 rounded">
+            <input type="date" name="res-date" placeholder="Select date:" class="width__2 rounded error">
+            <div class="error-message">Date is a required field.</div>
+            <input type="time" name="res-time" placeholder="Select time:" class="width__2 rounded error">
+            <div class="error-message">Time is a required field.</div>
             <input type="submit" value="SUBMIT" class="btn rounded">
           </fieldset>
         </form>

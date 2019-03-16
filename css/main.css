@@ -123,7 +123,7 @@ h2 {
 }
 h3 {
     font-weight: 900;
-    font-size: 3em;
+    font-size: 2.8em;
     color: #fff;
 }
 h4 {
@@ -727,7 +727,8 @@ input::placeholder {
 }
 input:focus {
     outline: none;
-    border-color: #c22222;
+    border-color: #3b3333;
+    opacity: 0.6;
 }
 input.btn {
     font-size: 1.6em;
@@ -758,6 +759,22 @@ input.btn {
     margin: 0;
     cursor: pointer;
     width: 10px;
+}
+.error-message {
+  color: #c22222;
+  display: none;
+  float: left;
+  font-size: 10px;
+  line-height: 15px;
+  margin: 5px 0 0;
+}
+.error input[type=text] {
+  background-color: #fce4e4;
+  border: 1px solid #c22222;
+  outline: none;
+}
+.error .error-message {
+  display: none;
 }
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
