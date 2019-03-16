@@ -27,6 +27,25 @@ btn.on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop:0}, '300');
 });
+/*
+$('input[type="email"]').focusout(function(){
+  if($(this).val().indexOf('@') > -1 && $(this).val().indexOf('.') > -1){
+    $('.status').html("");
+  }else{
+    $('.status').html("The email address is invalid. Try again.");
+  }
+
+});
+var target = $('input[type="name"]');
+
+$('input[type="name"]').focusout(function(){
+  if(target.length  > -1 ){
+    $('.status').html("");
+  }else{
+    $('.status').html("The email address is invalid. Try again.");
+  }
+});*/
+
 
 $('.btn').on('click', function(event) {
 	event.preventDefault();

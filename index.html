@@ -215,16 +215,8 @@
 </main>
 
   <footer class="clearfix">
-    <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <hr>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <hr>
     <div class="container2">
       <a href="index.html" class="footer-logo">
         <img src="img/garage_logo.png" alt="Garage X logo">
@@ -237,7 +229,7 @@
     </div>
   </footer>
 
-  <div class="modal">
+  <div class="modal clearfix">
     <div class="modal-wrap text-center">
       <div class="modal-inner">
         <img src="img/garage_logo.png" alt="garage logo">
@@ -252,17 +244,18 @@
         <form>
           <fieldset>
             <legend>Contact person</legend>
+            <div class="error-message">This is a required field.</div>
             <input type="text" name="firstname-surname" placeholder="Enter name" class="width__2 rounded error">
-            <div class="error-message">Name is a required field.</div>
             <input type="number" name="phone-num" placeholder="Enter phone number" class="rounded">
+            <!--<p class="status"></p>-->
             <input type="email" name="email" placeholder="Enter email address" class="rounded">       
           </fieldset>
           <fieldset>
             <legend>Make your appointment</legend>
+            <div class="error-message">This is a required field.</div>
             <input type="date" name="res-date" placeholder="Select date:" class="width__2 rounded error">
-            <div class="error-message">Date is a required field.</div>
+            <div class="error-message">This is a required field.</div>
             <input type="time" name="res-time" placeholder="Select time:" class="width__2 rounded error">
-            <div class="error-message">Time is a required field.</div>
             <input type="submit" value="SUBMIT" class="btn rounded">
           </fieldset>
         </form>

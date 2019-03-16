@@ -723,6 +723,7 @@ legend {
     color: #3b3b3b;
 }
 input {
+    /*float: left;*/
     border: 1px solid #d6d6d6;
     width: 100%;
     padding: 20px 15px;
@@ -755,6 +756,12 @@ input.btn {
     font-style: italic;
     margin-right: 0.5em;
 }
+ /**input[type="number"]{
+    margin-top: 26px; 
+ }
+ input[type="email"] {
+    margin-top: 25px;
+ }*/
 .modal img:nth-child(1) {
     position: absolute;
     top: 4%;
@@ -773,10 +780,12 @@ input.btn {
 }
 .error-message {
   color: #c22222;
-  display: none;
+  display: inline-block;
+  visibility: hidden;
   float: left;
   font-size: 10px;
   line-height: 15px;
+  padding-left: 10px;
   margin: 5px 0 0;
 }
 .error input[type=text] {
@@ -785,8 +794,16 @@ input.btn {
   outline: none;
 }
 .error .error-message {
-  display: none;
+  /*display: none;*/
 }
+/*.status {
+    display: inline;
+    color: #c22222;
+    font-size: 10px;
+    line-height: 25px;
+    padding-left: 10px;
+    margin: 5px 0 0;
+}*/
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
