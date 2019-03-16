@@ -249,12 +249,12 @@ header {
     float: right;
     top: 70px;
     right: -1px;
-    width: 43%;
-    height: 53%;
+    width: 152px;
+    height: 303px;
     background-color: #fff;
     text-align: left;
     color: #fff;
-    z-index: 5;
+    z-index: 2;
 }
 .nav.active {
     display: table;
@@ -668,6 +668,8 @@ footer span {
     top: 0;
     left: 0;
     background-color: rgba(0,0,0,.6);
+    z-index: 2;
+
 }
 .modal.open {
     display: block;
@@ -716,6 +718,7 @@ input {
     padding: 20px 15px;
     margin-bottom: 20px;
     font-size: 16px;
+    background-color: white;
 }
 input::placeholder {
   color: #d6d6d6;
@@ -1014,7 +1017,7 @@ input.btn {
         position: absolute;
         left: 60px;
         top: 0px;
-        z-index: 5;
+        z-index: 2;
         width: 145px;
     }
     .hero div {
@@ -1251,7 +1254,7 @@ input.btn {
       position: absolute;
       left: 60px;
       top: 0px;
-      z-index: 5;
+      z-index: 2;
       width: 145px;
     }
     .hero div {
@@ -1357,13 +1360,13 @@ input.btn {
 @media only screen and (min-width: 1024px) {
     /* ======== HEADER ========== */
     header {
-        padding: 2px 0 2px;
+        padding: 70px 0 2px;
     }
     #logo {
       position: absolute;
       left: 60px;
       top: 0px;
-      z-index: 5;
+      z-index: 1;
       width: 145px;
     }
     nav {
@@ -1377,20 +1380,32 @@ input.btn {
         max-width: 80%;
         margin-right: 10px;
     }
+    .nav{
+        display: block;
+        max-width: 85%;
+        visibility: visible;
+        position: absolute;
+        float: right;
+        top: 11px;
+        /*right: 35px;*/
+        width: 600px;
+        height: 50px;
+        z-index: 0;
+    }
     nav li {
         float: left;
     }
     nav a {
         color: #3b3333;
-        margin-left: 20px;
-        font-size: 1.2em;
+        margin: 0px 13px;
+        font-size: 1.4em;
         padding: 2px;
     }
     nav a:not(.btn).active,
     nav a:not(.btn):hover {
         color: #c22222;
         font-weight: 500;
-        font-size: 1.5em;
+        /*font-size: 1.5em;*/
         transition: 20ms;
         transition-duration: 0.3s;
         /*border-top: 1px solid #c22222;
@@ -1398,12 +1413,15 @@ input.btn {
     }
     nav a,
     nav a.btn {
-        font-size: 1.2em;
+        font-size: 1.4em;
     }
     nav a.btn {
+        position: absolute;
+        right: 2px;
         color: #fff;
         font-size: 1.4em;
         background: #c22222;
+        padding: 0 25px;
     }
     .burger,
     nav .close {
