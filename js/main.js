@@ -1,3 +1,18 @@
+
+$(document).ready(function(){
+
+$('[data-trigger="dropdown"]').on('mouseenter', function(){
+  var submenu = $(this).parent().find('.nav');
+  submenu.fadeIn(500);
+
+  $(this).on('mouseleave', function(){
+
+    $('.burger').on('mouseleave', function(){
+      submenu.fadeOut(300);
+    });
+  });
+});
+
 $('.btn').on('click', function(event) {
 	event.preventDefault();
 	/* Act on the event */
@@ -49,3 +64,5 @@ $('a[href*="#"]')
     }
   });
 }
+
+});

@@ -164,6 +164,7 @@ a {
     background: #c22222;
     padding: 10px 31px;
     outline: none;
+    margin-left: 21px;
 }
 .btn:hover{
     cursor: pointer;
@@ -240,20 +241,23 @@ blockquote::before {
 header {
     padding: 15px 0 10px;
 }
-nav {
-    display: table;
+.nav {
+    display: none;
     max-width: 70%;
-    visibility: hidden;
+    visibility: visible;
     position: absolute;
     float: right;
     top: 70px;
-    right: 0px;
-    width: 40%;
-    height: 30%;
+    right: -1px;
+    width: 43%;
+    height: 53%;
     background-color: #fff;
     text-align: left;
     color: #fff;
     z-index: 5;
+}
+.nav.active {
+    display: table;
 }
 nav ul {
     display: table-cell;
@@ -263,11 +267,14 @@ nav a {
     color: #3b3333;
     font-weight: 500;
     font-size: 1.2em;
-    line-height: 70px;
-    padding: 5px 10px;
+    line-height: 50px;
+    padding: 5px 25px;
+}
+nav a:hover {
+    color: #c22222;
 }
 nav .btn {
-    background: #fff;
+    /*background: #fff;*/
 }
 #logo {
     position: absolute;
