@@ -1,7 +1,6 @@
 
 $(document).ready(function(){
 
-console.log('aaaa');
 $('[data-trigger="dropdown"]').on('mouseenter', function(){
   var submenu = $(this).parent().find('.nav');
   submenu.fadeIn(300);

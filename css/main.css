@@ -315,10 +315,8 @@ nav a:hover {
     background-size:cover;
     position: relative;
     /*background-position: 60%;*/
+    background-position-x: 52%;
     background-position-y: 98%;
-}
-.hero div {
-    padding: 90px 70px 60px 15px;
 }
 .hero .btn {
     padding: 15px 25px;
@@ -339,7 +337,9 @@ span strong{
     color: white;
 }
 h1{
-    font-size: 3.8em;
+    font-size: 3.2em;
+    max-width: 157px;
+    margin-bottom: 87px;
 }
 /* ========== HERO SECTION END======== */
 
@@ -458,12 +458,12 @@ h1{
     background-repeat:no-repeat;
     background-size:cover;
     position: relative;
-    background-position: 70%;
+    background-position: 17%;
 }
 .about-rect {
     max-width: 79%;
     background-color: white;
-    opacity: .8;
+    opacity: .85;
     margin-top: 30px;
     margin-bottom: 30px;
     padding: 5px 10px 5px 10px;
@@ -855,7 +855,7 @@ input.btn {
    ========================================================================== */
 @media only screen and (min-width: 320px) { /*Visak ali kasno da brisem*/
     .hero div { /*NE DODAJ OVDE!*/
-        padding: 50px 70px 40px 25px;
+        padding: 20px 57px 33px 25px;
     }
     .services.container {
         padding-right: 34px;
@@ -881,9 +881,9 @@ input.btn {
     }
 }
 @media only screen and (min-width: 385px) {
-    .hero div {
+    /*.hero div {
         padding: 80px 100px 40px 25px;
-    }
+    }*/
     .hero .btn {
     padding: 15px 25px;
     position: relative;
@@ -961,7 +961,7 @@ input.btn {
 }
 @media only screen and (min-width: 475px) {
     .hero div {
-        padding: 90px 220px 40px 25px;
+        padding: 8px 220px 28px 25px;
     }
     .hero .btn {
         position: relative;
@@ -994,7 +994,7 @@ input.btn {
         font-size: 2.5em;
     }
     p{
-        font-size: 2em;
+        font-size: 1.3em;
     }
     blockquote{
         font-size: 3em;
@@ -1111,6 +1111,9 @@ input.btn {
     }
 }
 @media only screen and (min-width: 768px) {
+    h1 {
+        max-width: 200px;
+    }
     #logo {
         position: absolute;
         left: 60px;
@@ -1154,6 +1157,7 @@ input.btn {
     }
     #two-column {
         column-count: 2;
+        font-size: 1.8em;
         column-gap: 40px;
     }
     .tips h2 {
@@ -1304,7 +1308,7 @@ input.btn {
     }
     h1{
         font-size: 4em;
-        max-width: 80%;
+        max-width: 253px;
     }
     .tips strong{
         padding-right: 15px;
@@ -1368,7 +1372,7 @@ input.btn {
     }
     h1{
         font-size: 5em;
-        max-width: 90%;
+        max-width: 300px;
     }
     .hero .btn {
         position: relative;
@@ -1454,6 +1458,9 @@ input.btn {
     #care-tips {
         padding-right: 70px;
         padding-left: 70px;
+    }
+    #two-column {
+        line-height: 2;
     }
     #why-choose {
         padding-right: 70px;
@@ -1541,12 +1548,12 @@ input.btn {
 
     /* ========== HERO SECTION ======== */
     .hero div {
-        padding: 60px 90px 20px 130px;
+        padding: 68px 68px 100px 70px;
     }
     h1{
-        font-size: 5.5em;
-        margin-bottom: 120px;
-        max-width: 70%;
+        font-size: 5em;
+        margin-bottom: 78px;
+        max-width: 311px;
     }
     .hero p{
         color: white;
@@ -1684,12 +1691,9 @@ footer span {
 
 }
 @media only screen and (min-width: 1150px) {
-    .hero div {
+    /*.hero div {
         padding: 60px 400px 60px 135.3px;
-    }
-    h1 {
-        max-width: 80%;
-    } 
+    }*/ 
     blockquote {
         font-size: 3.2em;
     }
@@ -1736,19 +1740,15 @@ footer span {
 }
 @media only screen and (min-width: 1200px) {
     .hero div {
-        padding: 70px 85px 114px 75px;
+        padding: 68px 68px 100px 70px;
     }
     h1{
-        font-size: 4.5em;
-        max-width: 34%;
+        font-size: 5em;
+        max-width: 311px;
     }
     blockquote {
         margin-top: 0px;
     }  
-    .about-rect {
-        margin-left: ;
-        margin-right: ;
-    } 
     #care-tips {
         padding-right: 105px;
         padding-left: 110px;
