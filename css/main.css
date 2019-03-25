@@ -1552,7 +1552,7 @@ input.btn {
     }
     h1{
         font-size: 5em;
-        margin-bottom: 78px;
+        margin-bottom: 67px;
         max-width: 311px;
     }
     .hero p{
@@ -1740,7 +1740,7 @@ footer span {
 }
 @media only screen and (min-width: 1200px) {
     .hero div {
-        padding: 68px 68px 100px 70px;
+        padding: 65px 68px 100px 70px;
     }
     h1{
         font-size: 5em;
