@@ -154,7 +154,7 @@ a {
     width: 100%;
     height: 100%;
     background: black;
-    opacity: .75;
+    opacity: .1;
     position: absolute;
 }
 .btn {
@@ -310,11 +310,12 @@ nav a:hover {
 
 /* ========== HERO SECTION ======== */
 .hero {
-    background-image:url('../img/car-repair-photo.png');
+    background-image:url('../img/car-repair-photo.jpg');
     background-repeat:no-repeat;
     background-size:cover;
     position: relative;
-    background-position: 60%;
+    /*background-position: 60%;*/
+    background-position-y: 98%;
 }
 .hero div {
     padding: 90px 70px 60px 15px;
@@ -453,7 +454,7 @@ h1{
 
 /* ========== SECTION ABOUT US ======== */
 .about {
-    background-image:url('../img/about-us.png');
+    background-image:url('../img/about-us.jpg');
     background-repeat:no-repeat;
     background-size:cover;
     position: relative;
@@ -1506,8 +1507,8 @@ input.btn {
     }
     nav a {
         color: #3b3333;
-        margin: 0px 13px;
-        font-size: 1.3em;
+        margin: 0px 11px;
+        font-size: 1.4em;
         padding: 2px;
     }
     nav a:not(.btn).active,
@@ -1522,13 +1523,13 @@ input.btn {
     }
     nav a,
     nav a.btn {
-        font-size: 1.3em;
+        font-size: 1.4em;
     }
     nav a.btn {
         position: absolute;
         right: 13px;
         color: #fff;
-        font-size: 1.3em;
+        font-size: 1.4em;
         background: #c22222;
         padding: 0 35px;
     }
@@ -1539,11 +1540,6 @@ input.btn {
     /* ======== HEADER END ========== */
 
     /* ========== HERO SECTION ======== */
-    .hero {
-        background-image:url('../img/car-repair-photo.png');
-        background-repeat:no-repeat;
-        background-size:cover;
-    }
     .hero div {
         padding: 60px 90px 20px 130px;
     }
@@ -1554,10 +1550,10 @@ input.btn {
     }
     .hero p{
         color: white;
-        font-size: 2em;
+        font-size: 1.8em;
     }
     .hero .btn{
-        font-size: 1.3em;  
+        font-size: 1.4em;  
         position: none !important;
         left: 0% !important;
         margin-left: 0px; 
@@ -1740,11 +1736,11 @@ footer span {
 }
 @media only screen and (min-width: 1200px) {
     .hero div {
-        padding: 70px 85px 85px 143px;
+        padding: 70px 85px 114px 75px;
     }
     h1{
-        font-size: 6.5em;
-        max-width: 65%;
+        font-size: 4.5em;
+        max-width: 34%;
     }
     blockquote {
         margin-top: 0px;
