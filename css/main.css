@@ -165,7 +165,7 @@ a {
     padding: 10px 31px;
     outline: none;
     margin-left: 21px;
-    box-shadow: 3px 3px 1px 0px #624848;
+    /*box-shadow: 3px 3px 1px 0px #624848;*/
 }
 .btn:hover{
     cursor: pointer;
@@ -176,6 +176,7 @@ a {
 }
 .hero .fas{
     padding-left: 0px;
+    margin-left: 10px;
 }
 .rounded{
     border-radius: 6px;
@@ -274,9 +275,6 @@ nav a {
 nav a:hover {
     color: #c22222;
 }
-nav .btn {
-    /*background: #fff;*/
-}
 #logo {
     position: absolute;
     left: 20px;
@@ -322,12 +320,12 @@ nav .btn {
     padding: 90px 70px 60px 15px;
 }
 .hero .btn {
-    padding: 15px 44px;
-    font-size: 1.8em;
+    padding: 15px 25px;
+    font-size: 1.3em;
     position: relative;
-    left: 50%;
-    margin-left: -80px;
-    box-shadow: 2px 2px 0px 0px #fff;
+    left: 0%;
+    margin-left: 0px;
+    box-shadow: none;
 }
 #overlay-div{
     position: relative;
@@ -408,6 +406,51 @@ h1{
 }
 /* ========== SECTION SERVICES END ======== */
 
+/* ========== SECTION SPECIALS  ======== */
+.special h2 {
+    font-weight: 500;
+    font-size: 2em;
+}
+.special h4 {
+    text-align: center;
+    font-size: 1.4em;
+}
+.special strong {
+    color: #c22222;
+}
+.slides > li {
+    /*box-shadow: 3px 3px 9px 1px #624848;*/
+}
+#special-rect {
+    border: 0.5px solid #3b3333;
+    border-color:rgba(59,51,51, 0.1);  
+    border-top: none;
+    padding: 15px;
+    position: relative;
+}
+#special-name {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+#special-offer {
+    margin: 25px 0;
+    font-weight: 300;
+    font-size: 1.3em;
+    max-width: 88%;
+}
+#special-price {
+    font-size: 2em;
+    font-weight: 500;
+    margin: 0;
+    color: #c22222;
+    position: absolute;
+    bottom: 4%;
+    right: 7%;
+}
+/* ========== SECTION SPECIALS END  ======== */
+
 /* ========== SECTION ABOUT US ======== */
 .about {
     background-image:url('../img/about-us.png');
@@ -464,7 +507,7 @@ h1{
 }
 .why h4 {
     text-align: center;
-    font-size: 1.7em;
+    font-size: 1.4em;
 }
 .why strong {
     color: #c22222;
@@ -841,9 +884,10 @@ input.btn {
         padding: 80px 100px 40px 25px;
     }
     .hero .btn {
-        position: relative;
-        left: 50%;
-        margin-left: -65px;
+    padding: 15px 25px;
+    position: relative;
+    left: 0%;
+    margin-left: 0px;
     }
     .services h2{
         padding-top: 30px;
@@ -886,6 +930,10 @@ input.btn {
         padding-right: 14px;
         padding-left: 14px;
     }
+    #special {
+        padding-left: 41px;
+        padding-right: 41px;
+    }
     .contact-us {
         padding: 12% 17%;
     }
@@ -916,8 +964,8 @@ input.btn {
     }
     .hero .btn {
         position: relative;
-        left: 50%;
-        margin-left: -0px;
+        left: 0%;
+        margin-left: 0px;
     }
     .services h2{
         padding-top: 20px;
@@ -981,6 +1029,10 @@ input.btn {
     #contact {
         padding-right: 36px;
         padding-left: 36px;
+    }
+    #special {
+        padding-left: 75px;
+        padding-right: 75px;
     }
     .why h2 {
         font-size: 2.5em;
@@ -1163,6 +1215,10 @@ input.btn {
         padding-right: 51px;
         padding-left: 55px;
     }
+    #special {
+        padding-right: 88px;
+        padding-left: 88px;
+    }
     .contact-us {
         padding: 12% 8%
     }
@@ -1284,6 +1340,10 @@ input.btn {
         padding-right: 57px;
         padding-left: 57px;
     }
+    #special {
+        padding-left: 98px;
+        padding-right: 98px;
+    }
     .contact-icon {
         padding-left: 39%;
     }
@@ -1297,7 +1357,7 @@ input.btn {
 @media only screen and (min-width: 945px) {
     #logo {
       position: absolute;
-      left: 60px;
+      left: 61px;
       top: 0px;
       z-index: 2;
       width: 145px;
@@ -1335,6 +1395,10 @@ input.btn {
     #contact {
         padding-right: 65px;
         padding-left: 65px; 
+    }
+    #special {
+        padding-left: 100px;
+        padding-right: 100px;
     }
     .contact-us {
         padding: 15% 15%;
@@ -1409,7 +1473,7 @@ input.btn {
     }
     #logo {
       position: absolute;
-      left: 60px;
+      left: 70px;
       top: 0px;
       z-index: 1;
       width: 145px;
@@ -1423,7 +1487,7 @@ input.btn {
         float: right;
         visibility: visible;
         max-width: 80%;
-        margin-right: 10px;
+       /* margin-right: 10px;*/
     }
     .nav{
         display: block;
@@ -1443,7 +1507,7 @@ input.btn {
     nav a {
         color: #3b3333;
         margin: 0px 13px;
-        font-size: 1.4em;
+        font-size: 1.3em;
         padding: 2px;
     }
     nav a:not(.btn).active,
@@ -1458,15 +1522,15 @@ input.btn {
     }
     nav a,
     nav a.btn {
-        font-size: 1.4em;
+        font-size: 1.3em;
     }
     nav a.btn {
         position: absolute;
-        right: 2px;
+        right: 13px;
         color: #fff;
-        font-size: 1.4em;
+        font-size: 1.3em;
         background: #c22222;
-        padding: 0 25px;
+        padding: 0 35px;
     }
     .burger,
     nav .close {
@@ -1493,7 +1557,7 @@ input.btn {
         font-size: 2em;
     }
     .hero .btn{
-        font-size: 2em;  
+        font-size: 1.3em;  
         position: none !important;
         left: 0% !important;
         margin-left: 0px; 
@@ -1512,7 +1576,7 @@ input.btn {
     max-height: 60px; 
 }
 .services ul{
-    padding-bottom: 80px; 
+    padding-bottom: 50px; 
 }
 .services h2{
     padding-top: 36px;
@@ -1525,6 +1589,20 @@ input.btn {
     font-size: 1.4em;
 }
 /* ========== SECTION SERVICES END ======== */
+
+/* ========== SECTION SPECIAL ======== */
+
+#special {
+    padding-left: 130px;
+    padding-right: 130px;
+}
+.special h2 {
+    font-size: 2.5em;
+}
+.special h4 {
+    font-size: 1.8em;
+}
+/* ========== SECTION SPECIAL END ======== */
 
 /* ========== SECTION WHY  ======== */
 #why-choose {
@@ -1638,6 +1716,10 @@ footer span {
         padding-right: 88px;
         padding-left: 88px;
     }
+    #special {
+        padding-left: 137px;
+        padding-right: 137px;
+    }
     .back {
         right: 44px;
     }
@@ -1682,6 +1764,10 @@ footer span {
     #contact {
         padding-right: 105px;
         padding-left: 110px;
+    }
+    #special {
+        padding-left: 135px;
+        padding-right: 135px;
     }
     .contact li {
         padding-bottom: 38%;

@@ -1,6 +1,7 @@
 
 $(document).ready(function(){
 
+console.log('aaaa');
 $('[data-trigger="dropdown"]').on('mouseenter', function(){
   var submenu = $(this).parent().find('.nav');
   submenu.fadeIn(300);
@@ -15,7 +16,7 @@ $('[data-trigger="dropdown"]').on('mouseenter', function(){
 
 var btn = $('.back');
 
-$(window).scroll(function() {
+$(window).on('scroll', function() {
   if ($(window).scrollTop() > 300) {
     btn.addClass('show');
   } else {
@@ -26,6 +27,17 @@ $(window).scroll(function() {
 btn.on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop:0}, '300');
+});
+
+$(window).on('load', function() {
+  $('.flexslider').flexslider({
+    animation: "slide",
+    animationLoop: false,
+    itemWidth: 210,
+    itemMargin: 15,
+    minItems: 1,
+    maxItems: 4
+  });
 });
 /*
 $('input[type="email"]').focusout(function(){
