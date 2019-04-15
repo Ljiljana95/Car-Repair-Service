@@ -118,18 +118,18 @@ html[xmlns] .flexslider .slides {
 .flex-direction-nav a {
   text-decoration: none;
   display: block;
-  width: 45px;
-  height: 56px;
+  width: 41px;
+  height: 52px;
   margin: -36px 0 0;
   position: absolute;
-  top: 50%;
+  top: 39%;
   z-index: 10;
   overflow: hidden;
   opacity: 0;
   cursor: pointer;
   /*color: rgba(0, 0, 0, 0.8);*/
   color: #3b3333;
-  opacity: .8;
+  opacity: .9;
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -143,12 +143,12 @@ html[xmlns] .flexslider .slides {
 }*/
 .flex-direction-nav a:before {
   font-family: "flexslider-icon";
-  font-size: 62px;
-  margin: -13px 5px;
+  font-size: 53px;
+  margin: -9px 5px;
   display: inline-block;
   content: '\f001';
   color: #c22222;
-  opacity: .8;
+  opacity: .9;
   /*color: rgba(0, 0, 0, 0.8);*/
   text-shadow: 1px 1px 0 rgba(194,34,34, 0.3);
 }

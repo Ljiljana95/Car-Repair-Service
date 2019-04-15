@@ -140,22 +140,22 @@ a {
     text-decoration: none;
 }
 .container {
-    max-width: 1366px;
+    /*max-width: 1366px;*/
     padding-left: 135px;
     padding-right: 135px;
     margin: 0 auto;
 }
 .container2 {
-    max-width: 1366px;
-    padding-left: 15px;
-    padding-right: 15px;
+    /*max-width: 1366px;*/
+    padding-left: 70px;
+    padding-right: 70px;
     margin: 0 auto;
 }
 .color-overlay{
     width: 100%;
     height: 100%;
     background: black;
-    opacity: .1;
+    opacity: .4;
     position: absolute;
 }
 .btn {
@@ -253,7 +253,7 @@ header {
     top: 70px;
     right: -1px;
     width: 152px;
-    height: 303px;
+    height: 250px;
     background-color: #fff;
     text-align: left;
     color: #fff;
@@ -307,6 +307,9 @@ nav a:hover {
 .burger span:hover {
     cursor: pointer;
 }
+.btn {
+    display: none;
+}
 /* ======== HEADER END ========== */
 
 /* ========== HERO SECTION ======== */
@@ -320,6 +323,7 @@ nav a:hover {
     background-position-y: 98%;
 }
 .hero .btn {
+    display: block;
     padding: 15px 25px;
     font-size: 1.3em;
     position: relative;
@@ -340,7 +344,7 @@ span strong{
 h1{
     font-size: 3.2em;
     max-width: 157px;
-    margin-bottom: 87px;
+    margin-bottom: 27px;
 }
 /* ========== HERO SECTION END======== */
 
@@ -428,7 +432,7 @@ h1{
     border: 0.5px solid #3b3333;
     border-color:rgba(59,51,51, 0.1);  
     border-top: none;
-    padding: 15px;
+    padding: 20px;
     position: relative;
 }
 #special-name {
@@ -452,6 +456,9 @@ h1{
     bottom: 4%;
     right: 7%;
 }
+/*.slides img {
+    draggable = "true";
+}*/
 /* ========== SECTION SPECIALS END  ======== */
 
 /* ========== SECTION ABOUT US ======== */
@@ -460,7 +467,7 @@ h1{
     background-repeat:no-repeat;
     background-size:cover;
     position: relative;
-    background-position: 79%;
+    background-position: 59%;
 }
 .about-rect {
     max-width: 79%;
@@ -564,7 +571,7 @@ h1{
     opacity: .8;
     margin-left: 0px;
     margin-bottom: 5%;
-    padding: 10px 20px;
+    padding: 20px 20px;
 }
 .tips-rect2 {
     width: 100%;
@@ -572,7 +579,7 @@ h1{
     background-color: white;
     opacity: .8;
     margin-right: 0px;
-    padding: 10px 20px;
+    padding: 20px 20px;
 }
 .tips .tips-rect p, .tips-rect2 p{
     font-size: 1em;
@@ -599,15 +606,16 @@ h1{
 /* ========== SECTION CONTACT  ======== */
 .contact li {
     height: 0;
-    padding-bottom: 108%;
+    padding-bottom: 100%;
     overflow: hidden;
     position: relative;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     border: 0.5px solid #c22222;
     border-color:rgba(194,34,34, 0.4);
 }
 .contact-us {
-    padding: 12% 10%;
+    padding: 5% 5%;
+    padding-top: 16px;
 }
 .contact-us p{
     margin: 0;
@@ -626,7 +634,7 @@ h1{
     color: #c22222;
 }
 .contact-icon {
-    padding-left: 39%;
+    padding-left: 41%;
 }
 .contact-icon2 {
     padding-left: 36%;
@@ -728,7 +736,7 @@ footer span {
     z-index: 2;
 }
 .modal.open {
-    display: block;
+    /*display: block;*/
 }
 .modal-wrap {
     max-width: 653px;
@@ -795,11 +803,11 @@ input:focus {
 }
 input.btn {
     border: 1px #d6d6d6;
-    font-size: 1.6em;
+    font-size: 1.5em;
     max-width: 248px;
     margin: 0 auto;
     display: block;
-    padding: 13px 15px;
+    padding: 13px 13px;
 }
  input[type="date"]:before,
  input[type="time"]:before {
@@ -807,6 +815,11 @@ input.btn {
     color: #d6d6d6;
     font-style: italic;
     margin-right: 1.5em;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
 input[type="text"] {
     margin-bottom: 20px;
@@ -836,7 +849,7 @@ input[type="time"] {
 #close:hover {
     opacity: .7;
 }
-.animate {
+/*.animate {
   -webkit-animation: animatezoom 0.5s;
   animation: animatezoom 0.5s;
 }
@@ -848,7 +861,7 @@ input[type="time"] {
   from {transform: scale(0) } 
   to {transform: scale(1) 
   /*,transform-origin:center;*/}
-}
+}*/
 
 .checkbox2 {
     margin: 15px 0;
@@ -1019,7 +1032,7 @@ input[type="time"] {
         padding-left: 14px;
     }
     .contact-icon {
-        padding-left: 38%;
+        padding-left: 41%;
     }
     #contact {
         padding-right: 14px;
@@ -1030,7 +1043,7 @@ input[type="time"] {
         padding-right: 41px;
     }
     .contact-us {
-        padding: 12% 17%;
+        padding: 6% 6%;
     }
     .contact-us p {
         padding: 4px 0px;
@@ -1041,7 +1054,7 @@ input[type="time"] {
     }
     .contact li {
         height: 0;
-        padding-bottom: 103%;
+        padding-bottom: 93%;
     }
     #two-line {
         margin-bottom: 7%;
@@ -1111,7 +1124,7 @@ input[type="time"] {
         font-size: 2.5em;
     }
     .tips-rect, .tips-rect2 {
-        padding: 10px 30px;
+        padding: 20px 30px;
     }
     #care-tips {
         padding-right: 36px;
@@ -1143,27 +1156,40 @@ input[type="time"] {
         font-size: 1.5em;
         bottom: -17px;
     }
-    .contact-icon {
-        padding-left: 40%;
-    }
     .back {
         padding: 16px 12px;
         right: 10px;
     }
     .contact li {
-        padding-bottom: 95%;
+        width: 49%;
+        margin: 1px 1px;
+        padding-bottom: 69%;
+        float: left;
     }
     .contact-us p:nth-child(2),
     .contact-us p:nth-child(3) {
         padding: 18px 0px;
-        font-size: 2.2em;
+        font-size: 1.7em;
     }
     .contact-us p {
-        font-size: 1.7em;
+        font-size: 1.2em;
     }
     .contact .btn {
         padding: 4.5% 6%;
         font-size: 2em;
+        float: left;
+        margin-top: 5px;
+        width: 49%;
+        padding: 3.5% 6%;
+    }
+    #two-line span:nth-child(2) {
+        width: 141px;
+    }
+    .contact-icon {
+        padding-left: 36%;
+    }
+    .contact-icon2 {
+        padding-left: 28%;
     }
     .modal img:nth-child(1) {
         width: 100px;
@@ -1187,7 +1213,7 @@ input[type="time"] {
     .contact li {
         width: 49%;
         margin: 1px 1px;
-        padding-bottom: 65%;
+        padding-bottom: 53%;
         float: left;
     }
     .contact-us p:nth-child(2), 
@@ -1196,7 +1222,7 @@ input[type="time"] {
         font-size: 2em;
     }
     .contact-icon {
-        padding-left: 35%;
+        padding-left: 38%;
     }
     .contact-icon2 {
         padding-left: 28%;
@@ -1206,6 +1232,9 @@ input[type="time"] {
         margin-top: 5px;
         width: 49%;
         padding: 3.5% 6%;
+    }
+    #two-line span:nth-child(2) {
+        width: 162px;
     }
     footer ul {
         margin-right: 20px;
@@ -1318,7 +1347,7 @@ input[type="time"] {
     .contact li {
         width: 30.9%;
         margin: 0 1px;
-        padding-bottom: 41%;
+        padding-bottom: 42%;
         float: left;
     }
     .contact li:nth-child(2) {
@@ -1481,7 +1510,7 @@ input[type="time"] {
       width: 145px;
     }
     .hero div {
-        padding: 100px 390px 45px 60px;
+        padding: 58px 390px 22px 60px;
     }
     h1{
         font-size: 5em;
@@ -1611,13 +1640,13 @@ input[type="time"] {
        /* margin-right: 10px;*/
     }
     .nav{
-        display: block;
+        display: block !important;
         max-width: 85%;
         visibility: visible;
         position: absolute;
         float: right;
         top: 11px;
-        /*right: 35px;*/
+        right: 35px;
         width: 600px;
         height: 50px;
         z-index: 0;
@@ -1646,6 +1675,7 @@ input[type="time"] {
         font-size: 1.4em;
     }
     nav a.btn {
+        display: inline-block;
         position: absolute;
         /*right: 13px;*/
         color: #fff;
@@ -1665,7 +1695,7 @@ input[type="time"] {
     }
     h1{
         font-size: 5em;
-        margin-bottom: 67px;
+        margin-bottom: 27px;
         max-width: 311px;
     }
     .hero p{
@@ -1853,11 +1883,11 @@ footer span {
 }
 @media only screen and (min-width: 1200px) {
     .hero div {
-        padding: 65px 68px 100px 70px;
+        padding: 38px 68px 70px 70px;
     }
     h1{
-        font-size: 5em;
-        max-width: 311px;
+        font-size: 6.8em;
+        max-width: 340px;
     }
     blockquote {
         margin-top: 0px;
