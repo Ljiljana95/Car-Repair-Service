@@ -96,13 +96,13 @@ $('input[type="name"]').focusout(function(){
 $('.btn').on('click', function(event) {
  event.preventDefault();
  /* Act on the event */
- $('.modal').slideToggle("slow");
+ $('.modal').slideToggle();
 });
 
 $('.modal .close').on('click', function(event) {
  event.preventDefault();
  /* Act on the event */
- $('.modal').slideToggle("slow");
+ $('.modal').slideToggle();
 });
 var safari   = navigator.userAgent.indexOf("Safari") > -1;
 var chrome   = navigator.userAgent.indexOf('Chrome') > -1;
